@@ -22,4 +22,6 @@ private UserMapper mapper;
     @Test
     public void insert(){mapper.insert("hi");
     }
+
+    
 }
