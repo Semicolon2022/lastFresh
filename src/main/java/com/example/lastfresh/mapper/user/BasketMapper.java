@@ -9,7 +9,7 @@ public interface BasketMapper {
 //
 //    //    사기
 
-    public void insert(String hi);
+//    public void insert(String hi);
 //
 //
 //    //    특정 글 가져오기
