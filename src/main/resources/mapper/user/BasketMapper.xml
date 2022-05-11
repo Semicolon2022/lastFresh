@@ -6,9 +6,9 @@
         VALUES(#{userId})
     </insert>
 
-    <delete id="delete">
-    </delete>
+<!--    <delete id="delete">-->
+<!--    </delete>-->
 
-    <select id="select" resultType="">
-    </select>
+<!--    <select id="select" resultType="">-->
+<!--    </select>-->
 </mapper>
