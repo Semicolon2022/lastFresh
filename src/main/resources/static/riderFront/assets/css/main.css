@@ -424,7 +424,7 @@ input.deliveryFinishBtn.Mobile {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	background: #ff786e;
->>>>>>> 03edfeefecac412d9dd182ff4ab1674f5359dcea
+
 }
 @media screen and (max-width: 1000px) {
 
@@ -601,7 +601,6 @@ input.deliveryFinishBtn.Mobile {
 	div.modifyBtn{
 		margin: 67px 0 0 345px;
 	}
- HEAD
 
 	.areabutton {
 		width: 940px;
@@ -680,7 +679,7 @@ input.deliveryFinishBtn.Mobile {
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 		background: #ff786e;
->>>>>>> 03edfeefecac412d9dd182ff4ab1674f5359dcea
+
 	}
 }
 
