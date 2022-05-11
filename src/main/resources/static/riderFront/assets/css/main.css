@@ -178,7 +178,9 @@ div.order-content {
 	flex-direction: column;
 	flex-wrap: wrap;
 }
-
+div.order-info1{
+	margin-top: 16px;
+}
 div.order-list {
 	height: 22vh;
 	display: flex;
@@ -187,10 +189,6 @@ div.order-list {
 
 }
 
-div.order-info1 {
-	width: 18%;
-	margin-top: 14px;
-}
 
 div.order-info2 {
 	font-size: 1.3rem;
@@ -330,6 +328,7 @@ input.deliveryFinishBtn.Mobile {
 	margin-right: 7px;
 }
 
+
 .imgIcon {
 	width: 25px;
 }
@@ -414,6 +413,19 @@ input.deliveryFinishBtn.Mobile {
 	background-color: #000;
 	opacity: .5;
 }
+.order-timeTit{
+	text-align: center;
+	font-size: 21px;
+	border: 1px solid;
+	width: 75%;
+	margin: 31px 0 -22px 17px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background: #ff786e;
+>>>>>>> 03edfeefecac412d9dd182ff4ab1674f5359dcea
+}
 @media screen and (max-width: 1000px) {
 
 	div.gnb-wrapper {
@@ -460,7 +472,7 @@ input.deliveryFinishBtn.Mobile {
 		display: none;
 	}
 	div.order-list {
-		height: 19vh;
+		height: 22vh;
 		 display: block;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -507,8 +519,7 @@ input.deliveryFinishBtn.Mobile {
 		border-top-right-radius: 10px;
 	}
 	div.order-info1 {
-		padding: 36px 50px 20px 50px;
-		width: 36%;
+		padding: 21px 50px 28px 50px;
 		height: 112px;
 		display: flex;
 	}
@@ -525,7 +536,7 @@ input.deliveryFinishBtn.Mobile {
 		font-size: 30px;
 		line-height: 0.7;
 		width: 100%;
-		margin-top: -43px;
+		margin-top: -60px;
 		text-align: left;
 	}
 	div.order-address{
@@ -569,7 +580,7 @@ input.deliveryFinishBtn.Mobile {
 	input.deliveryFinishBtn.Mobile{
 		display: block;
 		font-size: 40px;
-		height: 274px;
+		height: 243px;
 		margin: -257px -367px 0 10px;
 		float: right;
 		width: 16vw;
@@ -590,6 +601,7 @@ input.deliveryFinishBtn.Mobile {
 	div.modifyBtn{
 		margin: 67px 0 0 345px;
 	}
+ HEAD
 
 	.areabutton {
 		width: 940px;
@@ -647,11 +659,28 @@ input.deliveryFinishBtn.Mobile {
 		max-height: 90%;
 		border-radius: 4px;
 		background-color: #fff;
-		-webkit-transform: translate(0,-50%);
-		-ms-transform: translate(0,-50%);
-		transform: translate(0,-50%);
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
 		width: 960px;
 		height: 730px;
+	}
+	.orderWrap{
+		display: flex;
+		flex-direction: column;
+	}
+	.order-timeTit{
+		text-align: center;
+		font-size: 30px;
+		border: 1px solid;
+		width: 30%;
+		margin: 0 0 0 34px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		background: #ff786e;
+>>>>>>> 03edfeefecac412d9dd182ff4ab1674f5359dcea
 	}
 }
 
