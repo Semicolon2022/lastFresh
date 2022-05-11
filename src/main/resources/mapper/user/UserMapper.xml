@@ -4,6 +4,7 @@
     <insert id="insert">
         INSERT INTO test(userId)
         VALUES(#{userId})
+    </insert>
 <!--    </insert>-->
 
 <!--    <delete id="delete">-->

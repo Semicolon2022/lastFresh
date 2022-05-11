@@ -29,7 +29,7 @@ class UserRepositoryTest {
         memberRepository.save(MemberVO.builder().memberId(id).memberName(name).memberBirth(birth).build());
     }
 
-/*    @Test
+   @Test
     public void saveUserTest(){
         String id ="hgd9999";
         String name = "홍길동";
@@ -40,9 +40,10 @@ class UserRepositoryTest {
         String mail = "akwnsldj1@naver.com";
         String kakao = "tpwhd15@naver.com";
         String status = "0";
+        String phone = "010-5291-2978";
 
-        userRepository.save(UserVO.builder().userId(id).userName(name).userPw(pw).userAddressPostNum(address1)
-                .userAddress(address2).userAddressDetail(address3).userEmail(mail).userKakao(kakao).userStatus(status).build());
+        userRepository.save(UserVO.builder().userId(id).userName(name).userPw(pw).userPhone(phone).userAddressPostNum(address1)
+                .userAddress(address2).userAddressDetail(address3).userEmail(mail).userKakao(kakao).build());
 
-    }*/
+    }
 }

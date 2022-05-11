@@ -8,16 +8,16 @@ import lombok.ToString;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tbl_category_product")
+@Table(name = "TBL_PRODUCT_CATEGORY")
 @Getter
 @ToString
 @NoArgsConstructor
 public class CategoryVO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "categoryProductNum")
+    @Column(name = "CATEGORY_NUM")
     private Long categoryProductNum;
-    @Column(name = "categoryName")
+    @Column(name = "CATEGORY_NAME")
     private String categoryName;
 
     @Builder
