@@ -9,28 +9,28 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "tbl_review")
+@Table(name = "TBL_REVIEW")
 @Getter
 @ToString
 @NoArgsConstructor
 public class ReviewVO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "reviewNum")
+    @Column(name = "REVIEW_NUM")
     private Long reviewNum;
-    @Column(name = "reviewTitle")
+    @Column(name = "REVIEW_TITLE")
     private String reviewTitle;
-    @Column(name = "reviewContent")
+    @Column(name = "REVIEW_CONTENT")
     private String reviewContent;
-    @Column(name = "reviewDate")
+    @Column(name = "REVIEW_DATE")
     private Date reviewDate;
 
     @ManyToOne // 다대일
-    @JoinColumn(name = "reviewProductNum")
+    @JoinColumn(name = "SELL_PRODUCT_NUM")
     private ProductVO productVO;
 
     @ManyToOne // 다대일
-    @JoinColumn(name = "reviewUserNum")
+    @JoinColumn(name = "USER_NUM")
     private UserVO userVO;
 
     @Builder
