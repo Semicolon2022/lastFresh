@@ -1,6 +1,7 @@
 package com.example.lastfresh.domain.dao.user;
 
 
+import com.example.lastfresh.domain.vo.BasketVO;
 import com.example.lastfresh.mapper.user.BasketMapper;
 import com.example.lastfresh.mapper.user.BillMapper;
 import lombok.RequiredArgsConstructor;
@@ -12,9 +13,9 @@ import org.springframework.stereotype.Repository;
 @Slf4j
 public class BasketDAO {
     private final BasketMapper basketMapper;
-//    public  getList( ) {}
-//    public void insert( ) {}
-//    public  get( ) {}
+    //  장바구니에 상품 담기
+    public void insert(BasketVO basketVO){basketMapper.insert(basketVO);}
+
 
 }
 
