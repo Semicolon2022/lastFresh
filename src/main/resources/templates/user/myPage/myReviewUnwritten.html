@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="/front/assets/css/user/myReviewUnwritten.css">
 </head>
 <style>
-    .myPage_type1{
-        height: 921px;
-    }
-    @media screen and (max-width: 1000px) {
-        .myPage_type1{
-            height: 0px;
-        }
-    }
+    /*.myPage_type1{*/
+    /*    height: 921px;*/
+    /*}*/
+    /*@media screen and (max-width: 1000px) {*/
+    /*    .myPage_type1{*/
+    /*        height: 0px;*/
+    /*    }*/
+    /*}*/
 
     .description{
         padding-bottom: 4px;
@@ -34,7 +34,7 @@
     }
 </style>
 <body>
-<th:block th:insert="/fragments/headerWithout.html :: headWithoutFragment"/>
+<th:block th:insert="fragments/headerWithout.html :: headWithoutFragment"/>
 <div class="page_myPage myPage_type1">
     <div id="snb" class="snb_my">
         <h2 class="tit_snb">마이페이지</h2>
@@ -110,7 +110,7 @@
         </div>
     </div>
 </div>
-<th:block th:insert="/fragments/footerWithout.html :: footWithoutFragment"/>
+<th:block th:insert="fragments/footerWithout.html :: footWithoutFragment"/>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/front/assets/js/user/myPageListMenuSelect.js"></script>
@@ -157,5 +157,13 @@
             $('#noReviews').text("작성 가능한 후기가 없습니다.");
         }
     });
+
+    $(document).ready(function() {
+        /*div 높이 변화시, 전체 높이 변경*/
+
+        let height = $('.section_review').height() + 300;
+        $('.myPage_type1').css("height", height);
+    });
+
 </script>
 </html>

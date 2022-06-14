@@ -53,7 +53,7 @@
   }
 </style>
 <body>
-<th:block th:insert="/fragments/headerWithout.html :: headWithoutFragment"/>
+<th:block th:insert="fragments/headerWithout.html :: headWithoutFragment"/>
 <div class="page_myPage myPage_type1">
   <div id="snb" class="snb_my">
     <h2 class="tit_snb">마이페이지</h2>
@@ -96,7 +96,7 @@
                   <!--  <a href="#" style="
                             background-image: url(//img-cf.kurly.com/shop/data/goods/1604379287477s0.jpg);
                           "></a>-->
-                    <a th:href="'/product/proDetail?sellProductNum=' + *{productVO.sellProductNum}" > <img th:src="'/user/order/display?fileName=' + *{productVO.sellProductImageUploadPath} + '/' + *{productVO.sellProductThumbnail}">
+                    <a> <img th:src="'/user/order/display?fileName=' + *{productVO.sellProductImageUploadPath} + '/' + *{productVO.sellProductThumbnail}">
                     </a>
                   </td>
                   <td class="info">
@@ -246,7 +246,7 @@
     </div>-->
   </div>
 </div>
-<th:block th:insert="/fragments/footerWithout.html :: footWithoutFragment"/>
+<th:block th:insert="fragments/footerWithout.html :: footWithoutFragment"/>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/front/assets/js/user/myOrderDetail.js"></script>
