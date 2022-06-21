@@ -21,10 +21,10 @@
             where tbp.BILL_STATUS = 0
         </if>
         <if test="billStatus.status2 != null">
-            where tbp.BILL_STATUS = 1 OR tbp.BILL_STATUS = 2 OR tbp.BILL_STATUS = 4
+            where (tbp.BILL_STATUS = 1 OR tbp.BILL_STATUS = 2 OR tbp.BILL_STATUS = 4)
         </if>
         <if test="billStatus.status3 != null">
-            where tbp.BILL_STATUS = 3 OR tbp.BILL_STATUS = -1
+            where (tbp.BILL_STATUS = 3 OR tbp.BILL_STATUS = -1)
         </if>
         and tsp.USER_NUM = #{userNum}
         ORDER BY 1 DESC limit #{criteria.limit}, 4
@@ -39,10 +39,10 @@
             where tbp.BILL_STATUS = 0
         </if>
         <if test="billStatus.status2 != null">
-            where tbp.BILL_STATUS = 1 OR tbp.BILL_STATUS = 2 OR tbp.BILL_STATUS = 4
+            where (tbp.BILL_STATUS = 1 OR tbp.BILL_STATUS = 2 OR tbp.BILL_STATUS = 4)
         </if>
         <if test="billStatus.status3 != null">
-            where tbp.BILL_STATUS = 3 OR tbp.BILL_STATUS = -1
+            where (tbp.BILL_STATUS = 3 OR tbp.BILL_STATUS = -1)
         </if>
         and tsp.USER_NUM = #{userNum}
     </select>
